@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class="mt-8">
+       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- triangle -->
+        <div class="card w-96 bg-base-100 shadow-xl text-center">
+            <figure><img src="images/triangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title flex justify-center">Triangle</h2>
+                <p>Area (A) = 0.5 X b X h</p>
+               
+                <div>
+                    <input id="inp-b" class="bg-gray-200 w-20" type="text" placeholder="b">
+                    <span>cm</span>
+                    <input id="inp-h" class="bg-gray-200 w-20" type="text" placeholder="h">
+                    <span>cm</span>
+                </div>
+                <p>Area = <span id="tri-val">00</span> cm</p>
+                <div class="card-actions flex justify-center mt-2">
+                    <button onclick="triBtn()" class="btn btn-primary w-2/3">Calculate</button>
+                </div>
+            </div>
+        </div>
+        <!-- rectangle -->
+        <div class="card w-96 bg-base-100 shadow-xl text-center">
+            <figure><img src="images/rectangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title flex justify-center">Rectangle</h2>
+                <p>Area (A) = w X l</p>
+                <div>
+                    <input id="w" class="bg-gray-200 w-20" type="text" placeholder="w">
+                    <span>cm</span>
+                    <input id="l" class="bg-gray-200 w-20" type="text" placeholder="l">
+                    <span>cm</span>
+                </div>
+                <p>Area = <span id="we">00</span>cm</p>
+                <div class="card-actions flex justify-center mt-2">
+                    <button onclick="recBtn()" class="btn btn-primary w-2/3">Calculate</button>
+                </div>
+            </div>
+        </div>
+        <!-- Parallelogram -->
+        <div class="card w-96 bg-base-100 shadow-xl text-center">
+            <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
+            <div class="card-body">
+                <h2 class="card-title flex justify-center">Parallelogram</h2>
+                <p>Area (A) = b X h</p>
+                <div>
+                    <input id="ba" class="bg-gray-200 w-20" type="text" placeholder="b">
+                    <span>cm</span>
+                    <input id="he" class="bg-gray-200 w-20" type="text" placeholder="h">
+                    <span>cm</span>
+                </div>
+                <p>Area = <span id="ar">00</span>cm</p>
+                <div class="card-actions flex justify-center mt-2">
+                    <button onclick="paraBtn()" class="btn btn-primary w-2/3">Calculate</button>
+                </div>
+            </div>
+        </div>
+       </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
